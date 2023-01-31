@@ -1,0 +1,22 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    background-color: coral;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+}
+
+main{
+    background-color: blue;
+    width: 90%;
+    height: 70vh;
+}
