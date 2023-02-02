@@ -1,0 +1,27 @@
+.first-block {
+    border-style: solid;
+    width: 40%;
+}
+
+.second-block {
+    border-style: solid;
+    width: 75%;
+}
+
+.third-block {
+    float: right;
+}
+
+.main {
+    border: solid red 5px;
+    display: flex;
+}
+
+@media screen and (max-width:576px) {
+    .second-block{
+        min-height: 100%;
+        background-color: red;
+        display: none;
+        margin: 0;
+    }
+}
