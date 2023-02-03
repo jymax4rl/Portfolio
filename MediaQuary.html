@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Understand Media Query</title>
-<!--    <link href="dist/hamburgers.css" rel="stylesheet">-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="mediaQuery.css">
     <link rel="stylesheet" href="phone.css" type="text/css" />
+<!--    <link rel="stylesheet" href="hamburgerAnimation/hamStyle.css">-->
 </head>
 <body>
 
 <header>
-    <button   type="button">
-      <span  class="hamburger-box">
-        <span class="hamburger hamburger--elastic "  class="hamburger-inner "></span>
-      </span>
-    </button>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <ul>
         <li>About Me</li>
         <li>Contact</li>
@@ -28,5 +29,6 @@
 </main>
 
 <script src="mediaquery.js  "></script>
+<script src="hamburgerAnimation/HamAnimation.js"></script>
 </body>
 </html>

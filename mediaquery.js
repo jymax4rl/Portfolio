@@ -1,4 +1,4 @@
-const hamburger = document.querySelector("button");
+const hamburger = document.querySelector(".hamburger");
 const dropdown = document.querySelector("ul");
 const listElement = document.querySelectorAll("li");
 const topHam = document.querySelector('.hamburger-box::before');
@@ -24,7 +24,7 @@ if(open){
     console.log('clicked to open hamburger');
     dropdown.style.transition = "ease all .2s";
     dropdown.style.display = "block";
-    dropdown.style.transform = 'translateY(0)';
+    dropdown.style.transform = 'translateY(40px)';
 
 
 
