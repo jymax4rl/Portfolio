@@ -1,26 +1,39 @@
 const hamburger = document.querySelector("button");
 const dropdown = document.querySelector("ul");
-    const listElement = document.querySelectorAll("li");
+const listElement = document.querySelectorAll("li");
+const topHam = document.querySelector('.hamburger-box::before');
 
-// dropdown.style.height = '0';
 
 
 let open = false;
 hamburger.addEventListener('click', function (){
-console.log('clicked hamburger');
 
 if(open){
     console.log('clicked to close hamburger');
-    dropdown.style.display = "none";
-        console.log('clicked hamburger');
+    dropdown.style.transition = "ease all .2s";
+    dropdown.style.transform = 'translateY(-100px)';
+    // dropdown.style.display = "none";
+    for (const listItem of listElement) {
+        listItem.style.height = "0";
+        listItem.style.visibility = "hidden"
+
+    }
         open = false;
 }else{
+
     console.log('clicked to open hamburger');
+    dropdown.style.transition = "ease all .2s";
     dropdown.style.display = "block";
+    dropdown.style.transform = 'translateY(0)';
+
+
+
     for (const listItem of listElement) {
-        listItem.style.transition = "ease all .3s";
         listItem.style.height = "100px";
+        listItem.style.fontSize = "16px";
         listItem.style.display = "flex";
+        listItem.style.visibility = "visible"
+
     }
     open = true;
 }
